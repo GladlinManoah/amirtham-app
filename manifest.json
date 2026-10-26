@@ -1,0 +1,10 @@
+{
+  "name": "அமிர்தம்",
+  "short_name": "அமிர்தம்",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F3F5F4",
+  "theme_color": "#17485A",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
