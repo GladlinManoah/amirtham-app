@@ -6,6 +6,7 @@
 <meta name="theme-color" content="#17485A">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
 <title>அமிர்தம்</title>
 <style>
 :root{--hd:#17485A;--hd2:#1F4E5F;--bg:#F3F5F4;--card:#FFFFFF;--ink:#1D2A2E;--mut:#6B7A7E;--line:#E2E7E8;--good:#2E7D32;--bad:#C62828;--amb:#B26A00;--fn:#2E6FA8;--an:#C26B12;--chip:#EEF3F4;--pri:#17485A}
@@ -76,6 +77,18 @@ pre.msg{white-space:pre-wrap;font:inherit;font-size:14px;background:#F6F8F8;bord
 .sh-bd{padding:6px 16px 22px;overflow:auto;padding-bottom:calc(22px + env(safe-area-inset-bottom))}
 .toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%) translateY(20px);background:#22343A;color:#fff;padding:10px 16px;border-radius:12px;font-size:14px;opacity:0;transition:.2s;z-index:30;max-width:90%;pointer-events:none}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.toast.bad{background:var(--bad)}
+.hbtn{display:flex;gap:6px;align-items:center}
+.li .lim{display:flex;align-items:center;gap:10px;flex:1;min-width:0;border:0;background:none;font:inherit;text-align:left;padding:0;color:var(--ink)}
+.cal-b{flex:none}
+.sw{width:52px;height:30px;border-radius:15px;border:0;background:#C9D3D6;position:relative;flex:none}
+.sw i{position:absolute;left:3px;top:3px;width:24px;height:24px;border-radius:12px;background:#fff;transition:.15s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
+.sw.on{background:var(--good)}.sw.on i{left:25px}
+.ord .orow{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--line)}.ord .orow.moved{background:#FFF8D9}
+input.wide{margin:8px 0}
+.map{height:340px;border-radius:10px;margin:8px 0;z-index:0}
+.leaflet-tooltip.mk{background:none;border:0;box-shadow:none;color:#fff;font-weight:700;font-size:12px;padding:0}
+.leaflet-tooltip.mk::before{display:none}
+.card.alert{background:#FDECEA;border:2px solid var(--bad)}
 .login{max-width:420px;margin:12vh auto 0;padding:20px;text-align:center}.login .logo{font-size:56px}.login h1{margin:4px 0;color:var(--hd)}
 </style>
 </head>
