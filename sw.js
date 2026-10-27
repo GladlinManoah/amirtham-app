@@ -1,5 +1,5 @@
 /* அமிர்தம் — offline cache. app கோப்புகள் மட்டும்; தரவு Firestore-ன் சொந்த offline சேமிப்பில். */
-const CACHE = 'amirtham-app-0.5';
+const CACHE = 'amirtham-app-0.5.1';
 const FILES = ['./', 'index.html', 'app.js', 'manifest.json', 'icon.svg', 'icon-192.png', 'icon-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => {
