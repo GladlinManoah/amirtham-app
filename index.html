@@ -112,6 +112,32 @@ details.card>summary{list-style:none;cursor:pointer;border-bottom:0}details.card
 #lock .dots{display:flex;gap:14px;justify-content:center;margin:18px 0}#lock .dots i{width:14px;height:14px;border-radius:7px;border:2px solid #fff}#lock .dots i.f{background:#fff}
 #lock .pad{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}#lock .pad button{border:0;border-radius:36px;height:64px;font-size:24px;background:rgba(255,255,255,.14);color:#fff}
 #lock .btn{margin-top:18px;color:var(--hd)}
+/* app-0.7: 5 tab · சிறு tab · ＋ · பணிகள் · மாத grid */
+nav.n5 button{font-size:12px}nav.n5 button span{font-size:20px}
+.subt{display:flex;gap:6px;overflow-x:auto;margin:6px -12px 2px;padding:2px 12px 6px;scrollbar-width:none}.subt::-webkit-scrollbar{display:none}
+.subt button{flex:none;border:1px solid #CBD5D8;background:#fff;border-radius:18px;padding:7px 13px;font:inherit;font-size:14px;font-weight:600;color:#3b4b50;white-space:nowrap}
+.subt button.on{background:var(--hd);border-color:var(--hd);color:#fff}
+.fab{position:fixed;right:16px;bottom:calc(74px + env(safe-area-inset-bottom));z-index:7;width:56px;height:56px;border-radius:28px;border:0;background:#F2B33D;color:#3a2a00;font-size:30px;line-height:1;box-shadow:0 3px 10px rgba(0,0,0,.25)}
+@media(min-width:760px){.fab{right:calc(50% - 344px)}}
+.msum,.tsum{margin-top:4px}.tsum .big{font-size:24px}
+.tl{padding:2px 10px}.trow{display:flex;align-items:stretch;gap:8px;border-bottom:1px solid var(--line)}.trow:last-child{border-bottom:0}
+.trow .tck{flex:none;width:34px;height:34px;margin:9px 0;border-radius:17px;border:2px solid #9DB0B5;background:#fff;font:inherit;font-size:17px;font-weight:700;color:var(--good);display:flex;align-items:center;justify-content:center}
+.trow .tck.nav{border-style:dashed;color:var(--hd)}.trow.done .tck{background:#E6F4E8;border-color:#7CC283}
+.trow .tbd{flex:1;min-width:0;display:flex;gap:8px;align-items:center;border:0;background:none;font:inherit;text-align:left;padding:9px 0;color:var(--ink)}
+.trow .tt{flex:none;width:44px;font-size:13px;font-weight:700;color:var(--hd);text-align:center}
+.trow .nm b{font-weight:600}.trow.done .nm b{text-decoration:line-through;color:var(--mut)}.trow.star .tck{border-color:#F2B33D}
+.trow.over .tt{color:var(--bad)}.bad-l{border-left:4px solid var(--bad)}
+.trow.ev{background:#EEF4FB;margin:4px -10px;padding:0 10px;border-left:4px solid var(--fn)}.trow.ev .tt{align-self:center;line-height:1.2}
+.btn.bad{color:var(--bad)}
+.mgw{padding:6px 0;overflow:hidden}.mgs{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.mg{border-collapse:separate;border-spacing:0;font-size:13px}
+.mg th,.mg td{border-bottom:1px solid var(--line);border-right:1px solid #EEF2F3;padding:0;text-align:center;min-width:30px;height:32px;white-space:nowrap}
+.mg thead th{font-size:12px;font-weight:700;color:var(--hd);background:#F6F8F8;line-height:1.1}.mg thead th small{display:block;font-weight:400;color:var(--mut);font-size:10px}
+.mg thead th.sun{background:#ECEFF0}.mg th.td{background:#FFF3B0}
+.mg tbody th,.mg thead th:first-child,.mg tfoot th{position:sticky;left:0;z-index:1;background:#fff;text-align:left;font-weight:600;min-width:118px;max-width:118px;overflow:hidden;text-overflow:ellipsis;padding:0 6px 0 4px;box-shadow:1px 0 0 var(--line)}
+.mg tbody th .rt{min-width:22px;height:22px;font-size:11.5px;margin-right:4px}
+.mg td.wo{background:#EDEDED}.mg td.ed{background:#FFF3B0}.mg td.fu{color:#9AACB0}.mg td.td{outline:2px solid var(--hd);outline-offset:-2px}.mg td.z{color:var(--bad)}
+.mg tr.left th{color:var(--mut)}.mg td.sm-t,.mg tfoot td{font-weight:700;background:#F6F8F8}.mg tfoot th{background:#F6F8F8}
 </style>
 </head>
 <body>
