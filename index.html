@@ -215,10 +215,35 @@ table.mg{border-collapse:separate;border-spacing:0;font-size:13px}
 .mg td.wo{background:#EDEDED}.mg td.ed{background:#FFF3B0}.mg td.fu{color:#9AACB0}.mg td.td{outline:2px solid var(--hd);outline-offset:-2px}.mg td.z{color:var(--bad)}
 .mg tr.left th{color:var(--mut)}.mg td.sm-t,.mg tfoot td{font-weight:700;background:#F6F8F8}.mg tfoot th{background:#F6F8F8}
 .row{display:flex;gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line);font-size:14px}.row:last-child{border-bottom:0}.row .r{margin-left:auto;font-size:12.5px;color:var(--mut);white-space:nowrap}
+/* ═══ app-0.9 ஒருமித்த வடிவம்: சிறு tab (எல்லாப் பிரிவும்) · பொத்தான் · எழுத்து வெட்டப்படாமல் ═══ */
+.btn{text-align:center;line-height:1.3}
+button{line-height:1.35}
+.subt,.seg.sm{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:4px;overflow:visible;margin:6px 0 10px;padding:4px;background:#DDE5E7;border-radius:14px}
+.subt:has(> :nth-child(6)){grid-auto-flow:row;grid-template-columns:repeat(3,1fr)}
+.subt button,.seg.sm button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-height:52px;padding:5px 2px;border:0;border-radius:10px;background:transparent;font:inherit;font-size:12.5px;font-weight:600;color:#3b4b50;white-space:normal;text-align:center;line-height:1.25;box-shadow:none}
+.subt:has(> :nth-child(6)) button{min-height:44px;flex-direction:row;gap:6px}
+.subt button.on,.seg.sm button.on{background:#fff;color:var(--hd);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.subt button .si,.seg.sm button .si{font-size:18px;line-height:1.2}
+.seg.sm.plain button,.seg.sm.two button{min-height:40px}
+.kpi4 button{border:0;font:inherit;color:inherit;background:#fff;border-radius:12px;padding:8px 4px;text-align:center;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.mgr .ic{white-space:normal;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.pin{white-space:normal;line-height:1.25;max-height:40px}
+.pinchk{margin:0 0 8px;font-size:13.5px}
+.pkrow input{text-align:center;font-weight:700}
+.tbtn{text-align:center;line-height:1.3}
+.li .nm,.trow .nm{line-height:1.35}
+.chip{line-height:1.3}
+/* முதல் திறப்பு — உடனே தெரியும் திரை */
+#boot{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#17485A;color:#fff;gap:10px;z-index:100}
+#boot .bl{font-size:52px}#boot .bt{font-size:22px;font-weight:800;letter-spacing:.5px}#boot .bs{font-size:13px;opacity:.8}
+#boot .bar{width:120px;height:4px;border-radius:2px;background:rgba(255,255,255,.2);overflow:hidden}#boot .bar i{display:block;height:100%;width:40%;background:#F2B33D;animation:bt 1s ease-in-out infinite alternate}
+@keyframes bt{from{margin-left:0}to{margin-left:60%}}
+.row2>label,.row3>label,.row2>div,.row3>div{min-width:0}input,select{min-width:0;max-width:100%}input[type=date],input[type=time]{min-height:42px}
 </style>
 </head>
 <body>
-<div id="app"></div>
+<div id="app"></div><div id="boot"><div class="bl">🥛</div><div class="bt">அமிர்தம்</div><div class="bar"><i></i></div><div class="bs">திறக்கிறது…</div></div>
+<script>(function(){var a=document.getElementById("app"),b=document.getElementById("boot");function c(){if(b&&(a.querySelector("nav")||a.querySelector("button"))){b.remove();b=null;o.disconnect()}}var o=new MutationObserver(c);o.observe(a,{childList:true,subtree:true});setTimeout(function(){if(b){b.remove();b=null}},15000)})();</script>
 <script src="app.js"></script>
 </body>
 </html>
