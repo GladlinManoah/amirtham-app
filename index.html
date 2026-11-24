@@ -391,6 +391,87 @@ body[data-tab="milk"]{--hd:#1E5A8A}body[data-tab="deliv"]{--hd:#5B3E8F}body[data
 .mcard{padding:10px 12px}.mcard.left{opacity:.6}.mch{display:flex;align-items:center;gap:8px;width:100%;border:0;background:none;padding:0 0 8px;font:inherit;color:inherit;text-align:left}.mch .nm{flex:1;min-width:0}.mch small{display:block;font-size:11.5px;color:#5c6669}.mch .qv{text-align:right;font-weight:700}
 .mcg{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}.mcd{height:32px;border:0;border-radius:6px;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font:inherit;line-height:1.05}.mcd small{font-size:9.5px;color:#5c6669}.mcd b{font-size:10px}
 .mcd.n,.mclg i.n{background:#CFE7D3}.mcd.c,.mclg i.c{background:#F6D58A}.mcd.z,.mclg i.z{background:#E2E0DC}.mcd.w,.mclg i.w{background:#B9D5F0}.mcd.e{background:#F4F6F7}.mcd.f{background:#fff;border:1px dashed #DAD5CB}.mcd.td{outline:2px solid var(--hd)}
+
+/* app-0.14 — வழி வரைபடம் புதிய தோற்றம், விநியோகத் திரை, வழி பக்கம், replay, யார் விநியோகம் */
+.dmw{background:#EEF1EC}
+.dmm .leaflet-container,.dmm.leaflet-container{background:#EEF1EC}
+.dmlg{display:none}
+.dmatt{position:absolute;left:8px;top:6px;z-index:600;font-size:9px;color:#556;background:rgba(255,255,255,.7);border-radius:4px;padding:0 4px;pointer-events:none}
+.dm.fol .dmatt{display:none}
+.dm .dmk .rl{font-size:12.5px;text-shadow:0 0 3px rgba(0,0,0,.55)}
+.dm .dmk.nx .rl{font-size:14px}
+.dm .dmk.sp{background:#7A3FB8;border-radius:10px;padding:1px 7px;color:#fff;font-size:11.5px;box-shadow:0 1px 3px rgba(0,0,0,.35)}
+.dm .dmk.sp .rl{text-shadow:none}
+.dmar{width:38px;height:38px}
+.dmar i{left:6px;top:2px;border-left:13px solid transparent;border-right:13px solid transparent;border-bottom:32px solid #1E66D0;filter:drop-shadow(0 0 2px #fff) drop-shadow(0 0 2px #fff) drop-shadow(0 2px 3px rgba(0,0,0,.5))}
+.dmar.dot i{left:10px;top:10px;width:18px;height:18px}
+.dmct button{width:44px;height:44px;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,.28)}
+.dmct button.off{background:#F1F1F1;color:#999}
+.dmbar{padding:9px 8px;gap:8px}
+.dmnx b{font-size:18px}
+.dmpk{display:inline-block;align-self:flex-start;background:#FFE08A;color:#4A3200;border-radius:8px;padding:1px 8px;font-weight:700;font-size:15px;margin:2px 0}
+.dmsd{font-size:13.5px;color:#CFE7FF}
+.dmsd.R{color:#FFD2CC;font-weight:700}
+.dmh-cv{font-size:24px}
+.dmh-sd{display:inline-block;background:#E7F0FF;color:#0B3D91;border-radius:8px;padding:2px 8px;font-size:14px;font-weight:700;margin:2px 0}
+.dmh-ok{display:flex;gap:8px;margin-top:10px}
+.dmh-ok .btn.xl{flex:1;font-size:20px;min-height:56px}
+.dmh-ok .btn.warn{flex:0 0 64px;font-size:20px}
+/* விநியோகத் திரை */
+.rtpack{display:flex;justify-content:space-between;gap:8px;text-align:center}
+.rtpack>div{flex:1;display:flex;flex-direction:column}
+.rtpack b{font-size:20px}
+.rtsum{display:flex;justify-content:space-between;align-items:center;width:100%;border:0;text-align:left;font:inherit;color:inherit;padding:10px 14px}
+.rtsum b{font-size:17px}
+.rtprog .bar{height:10px;border-radius:6px;background:#E3ECEA;overflow:hidden;margin-top:6px}
+.rtprog .bar i{display:block;height:100%;background:#2E7D32;border-radius:6px}
+.rtl .rtr{display:flex;align-items:center;gap:8px;padding:8px 2px;border-bottom:1px solid #EDF1F1}
+.rtl .rtr:last-child{border-bottom:0}
+.rtr .rt{flex:0 0 auto;min-width:30px;text-align:center;background:#17485A;color:#fff;border-radius:8px;padding:2px 6px;font-weight:700}
+.rtr .nm{flex:1;min-width:0;display:flex;flex-direction:column}
+.rtr .nm b{font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rtr .nm small{font-size:12.5px;color:#556}
+.rtr .rtpk{align-self:flex-start;margin-top:2px;background:#FFF3CD;color:#5A3D00;border-radius:7px;padding:0 7px;font-weight:700;font-size:14.5px}
+.rtr .bt{display:flex;align-items:center;gap:6px;flex:0 0 auto}
+.rtr .rtbig{width:62px;height:52px;font-size:26px;border-radius:12px;padding:0}
+.rtr .rtok{background:#2E7D32;color:#fff;border-radius:10px;padding:6px 10px;font-weight:700;font-size:15px}
+.rtr .rtis{background:#E08A00;color:#fff;border-radius:10px;padding:6px 10px;font-weight:700;font-size:15px}
+.rtr.ok{background:#F3FAF3}.rtr.iss{background:#FFF8EC}
+.rtend{font-size:17px;font-weight:700}
+/* வழி பக்கம் */
+.rtseg{margin-bottom:8px}
+.rtal{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding:8px 0;border-bottom:1px solid #EEF1F1}
+.rtal:last-child{border-bottom:0}
+.rtal>div:first-child{flex:1;min-width:0;display:flex;flex-direction:column}
+.rtal small{font-size:12.5px;color:#556}
+.rtab{display:flex;gap:6px;flex:0 0 auto;justify-content:flex-end;margin-left:auto}
+.rtal>div:first-child{flex-basis:62%}
+.rtmm{height:56vh;min-height:280px;border-radius:12px;overflow:hidden;background:#EEF1EC}
+.rtleg{display:flex;flex-wrap:wrap;gap:12px;font-size:13px;margin:8px 2px}
+.rtleg .o{color:#7A8A8D;font-weight:700}.rtleg .n{color:#1E66D0;font-weight:700}
+.rttl .rt{font-size:13px}
+.rtsg{background:#FFFBEA;border:1px solid #F2DE9B}
+/* replay */
+.rpwrap{border-radius:12px;overflow:hidden;margin:-2px -2px 8px}
+.rpwrap .dmw{height:52vh;max-height:none}
+.rpc{display:flex;align-items:center;gap:8px}
+.rpc #rppl{flex:0 0 52px;height:44px;font-size:20px;padding:0}
+.rpc input[type=range]{flex:1}
+.rpclk{flex:0 0 auto;font-size:13px;white-space:nowrap}
+.rpclk b{font-size:16px}
+.rpsp{margin:8px 0}
+/* யார் விநியோகம் */
+.rwg{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.rwd{border:1px solid #E3E8E8;background:#fff;border-radius:8px;padding:2px 2px 4px;display:flex;flex-wrap:wrap;justify-content:center;gap:2px;font:inherit}
+.rwd small{width:100%;text-align:center;font-size:11px;color:#667}
+.rwd i{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:46%;height:22px;border-radius:5px;font-size:10.5px;font-weight:700;overflow:hidden}
+.rwd i.e{background:#F1F3F3}
+.rwd i.pl{border:1px dashed currentColor;box-sizing:border-box}
+.rwd.fut{opacity:.4}
+.rwl{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 4px;font-size:13.5px}
+.rwl i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.rtwd{padding:8px 0;border-bottom:1px solid #EEF1F1}
+.rtwd:last-child{border-bottom:0}
 </style>
 </head>
 <body>
