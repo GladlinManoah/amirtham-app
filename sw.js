@@ -3,7 +3,7 @@
  * 0.14: CARTO வரைபடப் படங்களும் (am-tiles).
  * 0.10: வரைபடப் படங்கள் (OpenStreetMap / Esri satellite) + வீட்டுப் படங்கள் (Drive thumbnail) தனி cache-ல் — signal இல்லாத இடத்திலும் தெரிய.
  *       இவை பதிப்பு மாறினாலும் அழியாது (\"am-\" பெயர்); அளவு மீறினால் பழையவை நீக்கப்படும். */
-const CACHE = 'amirtham-app-0.14';
+const CACHE = 'amirtham-app-0.15';
 const TILES = 'am-tiles', PHOTOS = 'am-photos', TILE_MAX = 2500, PHOTO_MAX = 300;
 const FILES = ['./', 'index.html', 'app.js', 'manifest.json', 'icon.svg', 'icon-192.png', 'icon-512.png'];
 self.addEventListener('install', e => {
